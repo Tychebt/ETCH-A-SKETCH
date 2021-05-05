@@ -1,5 +1,7 @@
 
-    let value = prompt("How many cells in you table ?", 16)
+    let value = prompt("How many columns do you want ?", 64)
+
+    while(value>=101 || value<-1){value = prompt("Please choose a value between 0 and 100", 64)}
     
     var e = document.querySelector('.container'); // whatever you want to append the rows to: 
     e.style.display = 'table-cell';
@@ -23,9 +25,5 @@
 
     let reset = document.querySelector('.reset')
     reset.addEventListener("click",function(event){
-  
-
       window.location.reload()
-      
-     
           }, false);
