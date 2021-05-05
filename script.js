@@ -9,10 +9,11 @@
           cell.className = "gridsquare"; 
          
           row.appendChild(cell); 
+          cell.addEventListener("mouseover",function(event){
+            event.target.style.background = "orange";
+          }, false);
       } 
       e.appendChild(row); 
     } 
 
-    e.addEventListener("mouseover",function(event){
-      event.target.style.background = "orange";
-    }, false);
+ 
