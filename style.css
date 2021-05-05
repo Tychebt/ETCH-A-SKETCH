@@ -21,7 +21,7 @@ body{
     flex: 1 0 auto;
 }
 
-.row{
+.row{ 
     display: flex;
     border: 0px solid white;
     
