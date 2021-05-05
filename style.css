@@ -9,7 +9,8 @@ body{
 
 .container{
     background-color: antiquewhite;
-    border: 5px solid rgb(0, 0, 0);
+    border: 1px solid antiquewhite;
+    outline: rgb(0, 0, 0) 9px solid;
     width: 960px;
     height: 960px;
     padding: 0%;

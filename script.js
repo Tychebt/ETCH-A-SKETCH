@@ -29,7 +29,7 @@
           
             
 
-          cell.addEventListener("mouseover",function(event){
+          cell.addEventListener("mousemove",function(event){
             var randomColor = "#"+Math.floor(Math.random()*16777215).toString(16);
             if(mousedown == true){
             event.target.style.background = `${randomColor}`
