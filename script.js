@@ -24,9 +24,7 @@
     reset.addEventListener("click",function(event){
   
 
-      for(let k = 0; k<value; k++){
-        e.removeChild(row); 
-      }
+      window.location.reload()
       
      
           }, false);
