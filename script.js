@@ -15,29 +15,28 @@
 
           row.appendChild(cell); 
 
-          var mousedown = false
+          var mouseISdown = false
 
           cell.addEventListener("mousedown",function(event){
-          mousedown = true
-          console.log(mousedown)
+            mouseISdown = true
+          console.log(mouseISdown)
           });
 
           cell.addEventListener("mouseup",function(event){
-            mousedown = false
-            console.log(mousedown)
+            mouseISdown = false
+            console.log(mouseISdown)
             });
           
-            
 
-          cell.addEventListener("mousemove",function(event){
-            var randomColor = "#"+Math.floor(Math.random()*16777215).toString(16);
-            if(mousedown == true){
-            event.target.style.background = `${randomColor}`
-            console.log(mousedown)
-            }
-          }, false);
-        
-      } 
+            cell.addEventListener("mousemove",function(event){
+              var randomColor = "#"+Math.floor(Math.random()*16777215).toString(16);
+              if(mouseISdown == true){
+              event.target.style.background = `${randomColor}`
+              console.log(mouseISdown)
+              }
+            }, false);
+          
+        } 
       e.appendChild(row); 
     } 
            
