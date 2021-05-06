@@ -16,17 +16,35 @@
           row.appendChild(cell); 
 
           var mouseISdown = false
-
-          cell.addEventListener("mousedown",function(event){
-            mouseISdown = true
-          console.log(mouseISdown)
+var cmp=0;
+          //cell.addEventListener("mousedown",function(event){
+            cell.addEventListener('dblclick', function (event) {
+              if(cmp===0){
+              console.log('down >> ',event);
+              mouseISdown = true
+              console.log(mouseISdown);
+              setTimeout( ()=>{cmp++},10);
+              }
+            else if(cmp===1){
+              console.log('Up  >> ',event);
+              mouseISdown = false
+              console.log(mouseISdown)
+              setTimeout( ()=>{cmp=0},10);
+            }
           });
 
-          cell.addEventListener("mouseup",function(event){
+         /* calc(num1,num2,)
+          function calc(...sum){
+
+          }
+          */
+
+          /*cell.addEventListener("mouseup",function(event){
+            console.log('Up  >> ',event);
             mouseISdown = false
             console.log(mouseISdown)
             });
-          
+          */
 
             cell.addEventListener("mousemove",function(event){
               var randomColor = "#"+Math.floor(Math.random()*16777215).toString(16);
